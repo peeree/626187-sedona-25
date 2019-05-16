@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="page-header">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
     <nav class="navigation">
-      <a href="#" class="logo">
-      <img src="img/index-logo.svg" alt="Логотип Sedona">
-    </a>
+      <a href="index.html" class="logo">
+        <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Sedona">
+      </a>
       <ul class="site-navigation">
-          <li><a href="info">ИНФОРМАЦИЯ</a></li>
-          <li><a href="photo-video">ФОТО И ВИДЕО</a></li>
-          <li><a href="state-map">КАРТА ШТАТА</a></li>
-          <li><a href="hotels">ГОСТИНИЦЫ</a></li>
-        </ul>
+        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+        <li><a href="#">ФОТО И ВИДЕО</a></li>
+        <li><a href="#">КАРТА ШТАТА</a></li>
+        <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+      </ul>
     </nav>
-    </header>
-    class="intro"
-  </body>
+  </header>
+  <main class="container">
+    <section class="reasons">
+      <div class="box">
+        <h1 class="box__headline">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+        </h1>
+        <p class="box__text">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+        <span class="reasons__number">№ 1</span>
+        <p class="reasons__text">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ. ЗДЕСЬ ТЕЧЕТ СВОЯ ЖИЗНЬ.</p>
+        <ul class="reasons__icons">
+          <li class="reasons__item item-reasons">
+            <h3 class="item-reasons__title">ЖИЛЬЕ</h3>
+            <p class="item-reasons__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ. ВСЁ КАК В КИНО.</p>
+          </li>
+          <li class="reasons__item item-reasons">
+            <h3 class="item-reasons__title">СУВЕНИРЫ</h3>
+            <p class="item-reasons__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА.</p>
+          </li>
+          <li class="reasons__item item-reasons">
+            <h3 class="item-reasons__title">ЕДА</h3>
+            <p class="item-reasons__text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР. ВЫ НЕ РАЗОЧАРУЕТЕСЬ.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+        <span class="reasons__number">№ 2</span>
+        <p class="reasons__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ. ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ!</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+        <span class="reasons__number">№ 3</span>
+        <p class="reasons__text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ ОЧЕНЬ БЛИЗКО.</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">КРАСИВАЯ ДОРОГА</h2>
+        <span class="reasons__number">№ 4</span>
+        <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО.</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">МАЛО ТУРИСТОВ</h2>
+        <span class="reasons__number">№ 5</span>
+        <p class="reasons__text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ.</p>
+      </div>
+    </section>
+
+    <section class="search">
+      <h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="search__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ.
+          </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <b> #VISITSEDONA </b>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      <b> WEBSITE BY </b>
+      <a class="button" href="https://htmlacademy.ru">html academy</a>
+    </p>
+  </footer>
+
+  <-- Здесь будет форма поиска -->
+    <section class="modal modal-search">
+      ДАТА ЗАЕЗДА:
+      ДАТА ВЫЕЗДА:
+      ВЗРОСЛЫЕ:
+      ДЕТИ:
+      <span class="modal-close">x</span>
+    </section>
+
+    <-- Здесь будет карта -->
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <span class="modal-close">x</span>
+      </section>
+
+</body>
 </html>
